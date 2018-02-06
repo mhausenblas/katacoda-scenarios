@@ -1,6 +1,6 @@
 Let's install `kubed-sh` first. For this, we download the Linux binary (may take a few moments, downloads a ~3 MB binary):
 
-`curl -s -L https://github.com/mhausenblas/kubed-sh/releases/download/0.4.1/kubed-sh-linux -o kubed-sh`{{execute}}
+`curl -s -L https://github.com/mhausenblas/kubed-sh/releases/download/0.5/kubed-sh-linux -o kubed-sh`{{execute}}
 
 And now we make it executable and move it to a well-known place:
 
