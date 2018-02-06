@@ -1,1 +1,1 @@
-You've completed your first Katacoda scenario!
+Thanks for trying out `kubed-sh`.

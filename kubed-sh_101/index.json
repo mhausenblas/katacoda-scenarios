@@ -5,8 +5,16 @@
   "time": "5 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Install kubed-sh",
       "text": "step1.md"
+    },
+    {
+      "title": "Launch kubed-sh",
+      "text": "step2.md"
+    },
+    {
+      "title": "Learn more …",
+      "text": "step3.md"
     }],
     "intro": {
       "text": "intro.md",
@@ -18,7 +26,7 @@
   },
   "environment": {
     "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    "uimessage1": "\u001b[32mYour interactive bash terminal.\u001b[m\r\n"
   },
   "backend": {
     "imageid": "bash"
