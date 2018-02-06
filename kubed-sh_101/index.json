@@ -29,6 +29,6 @@
     "uimessage1": "\u001b[32mYour interactive bash terminal.\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "kubernetes"
   }
 }
