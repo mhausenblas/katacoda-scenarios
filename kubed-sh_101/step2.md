@@ -1,6 +1,6 @@
 Before we launch `kubed-sh`, let's get some examples set up:
 
-`git clone https://github.com/mhausenblas/kubed-sh.git && cd kubed-sh/tc`{{execute}}
+`git clone https://github.com/mhausenblas/kubed-sh.git && cd kubed-sh/tc/python/`{{execute}}
 
 Next, to launch `kubed-sh`, simply execute:
 
