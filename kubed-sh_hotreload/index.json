@@ -1,0 +1,34 @@
+{
+  "title": "kubed-sh hot-reload",
+  "description": "Learn how to use hot-reload in kubed-sh",
+  "difficulty": "intermediate",
+  "time": "8 minutes",
+  "details": {
+    "steps": [{
+      "title": "Preparation",
+      "text": "step1.md"
+    },
+    {
+      "title": "Updates",
+      "text": "step2.md"
+    },
+    {
+      "title": "Learn more …",
+      "text": "step3.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour interactive bash terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
