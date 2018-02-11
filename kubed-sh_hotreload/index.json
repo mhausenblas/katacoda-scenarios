@@ -18,7 +18,8 @@
     }],
     "intro": {
       "text": "intro.md",
-      "credits": ""
+      "courseData": "set-up-kubed.sh",
+      "credits": "Kudos to kubectl authors"
     },
     "finish": {
       "text": "finish.md"
@@ -26,7 +27,8 @@
   },
   "environment": {
     "uilayout": "terminal-terminal",
-    "uimessage1": "\u001b[32mUse this terminal for kubed-sh, the other for editing.\u001b[m\r\n"
+    "icon": "fa-kubernetes",
+    "uimessage1": "\u001b[32mUse one terminal for kubed-sh and the other for editing the script.\u001b[m\r\n"
   },
   "backend": {
     "imageid": "kubernetes"
