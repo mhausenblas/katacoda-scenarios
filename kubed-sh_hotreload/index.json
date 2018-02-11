@@ -25,8 +25,8 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour interactive bash terminal.\u001b[m\r\n"
+    "uilayout": "terminal-terminal",
+    "uimessage1": "\u001b[32mUse this terminal for kubed-sh, the other for editing.\u001b[m\r\n"
   },
   "backend": {
     "imageid": "kubernetes"
