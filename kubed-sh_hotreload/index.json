@@ -23,7 +23,14 @@
     },
     "finish": {
       "text": "finish.md"
-    }
+    },
+    "assets": {
+      "host01": [{
+        "file": ".vimrc",
+        "target": "~/"
+      }
+    ]
+  }
   },
   "environment": {
     "uilayout": "terminal",
