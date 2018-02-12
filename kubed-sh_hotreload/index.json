@@ -26,7 +26,7 @@
     },
     "assets": {
       "host01": [{
-        "file": "kubed-sh_hotreload/.vimrc",
+        "file": ".vimrc",
         "target": "~/"
       }
     ]
