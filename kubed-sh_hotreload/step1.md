@@ -7,7 +7,7 @@ Now let's first launch `kubed-sh` like so:
 
 `kubed-sh`{{execute}}
 
-Next, create a **new** terminal session using the `+` sign, (then selecting `Open New Terminal`) and launch `vi` in it to edit one of the scripts:
+Now we created a second terminal session and launch `vi` in it to edit one of the scripts:
 
 `cd kubed-sh/tc/node/`{{execute T2}}
 `vi test.js`{{execute T2}}
