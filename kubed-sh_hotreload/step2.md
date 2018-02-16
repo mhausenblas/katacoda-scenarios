@@ -1,4 +1,4 @@
-First, we need to enable the experimental hot-reload feature (make sure the focus is on the terminal session with `kubed-sh` running):
+Back in the first terminal session, first we need to enable the experimental hot-reload feature:
 
 `HOTRELOAD=true`{{execute T1}}
 
