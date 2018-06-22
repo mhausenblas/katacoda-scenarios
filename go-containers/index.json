@@ -1,0 +1,34 @@
+{
+  "title": "Go and containers",
+  "description": "Learn how to use Go with containers",
+  "difficulty": "intermediate",
+  "time": "20 minutes",
+  "details": {
+    "steps": [{
+      "title": "Content",
+      "text": "content.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "set-up-kubed.sh",
+      "credits": "Kudos to the Go community"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{
+        "file": ".vimrc",
+        "target": "~/"
+      }
+    ]
+  }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "icon": "fa-kubernetes"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
