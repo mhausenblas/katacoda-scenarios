@@ -1,3 +1,3 @@
 export GOROOT=/usr/local/go
-export GOPATH=/root/go4ops
-export G4OHOME=/root/go4ops
+export GOPATH=/root/work
+export G4OHOME=/root/work/src/github.com/mhausenblas/go4ops
