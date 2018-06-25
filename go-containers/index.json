@@ -7,6 +7,10 @@
     "steps": [{
       "title": "Content",
       "text": "content.md"
+    },
+    {
+    "title": "Basics",
+    "text": "basics0.md"
     }],
     "intro": {
       "text": "intro.md",

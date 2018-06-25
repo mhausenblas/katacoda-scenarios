@@ -1,1 +1,1 @@
-This is the Go with containers playground.
+This is the Go for ops playground.
