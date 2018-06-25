@@ -11,7 +11,12 @@
     {
     "title": "Basics",
     "text": "basics0.md"
-    }],
+    }
+    {
+      "title": "Basics",
+      "text": "basics1.md"
+    }
+    ],
     "intro": {
       "text": "intro.md",
       "courseData": "prelaunch.sh",
