@@ -6,10 +6,10 @@ Next we move on to some basic I/O, let's start with reading user input from `std
 
 `go run $G4OHOME/code/userin/main.go`{{execute}}
 
-How about reading a file? Here we go, we read `../data/simple.txt` all at once an print the content:
+How about reading a file? Here we go, we read `$G4OHOME/data/simple.txt` all at once an print the content:
 
-`go run $G4OHOME/code/files-reading/main.go`{{execute}}
+`cd $G4OHOME/code/files-reading/ && go run main.go`{{execute}}
 
-Now, let's write to `../data/out.txt`:
+Now, let's write to `$G4OHOME/data/out.txt`:
 
-`go run $G4OHOME/code/files-writing/main.go`{{execute}}
+`cd $G4OHOME/code/files-writing/ && go run main.go`{{execute}}
