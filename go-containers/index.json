@@ -2,7 +2,7 @@
   "title": "Go for ops",
   "description": "Learn how to use Go",
   "difficulty": "intermediate",
-  "time": "20 minutes",
+  "time": "60+ minutes",
   "details": {
     "steps": [{
       "title": "Content",
@@ -26,6 +26,9 @@
     },{
       "title": "Advanced",
       "text": "advanced1.md"
+    }, {
+      "title": "Advanced",
+      "text": "advanced2.md"
     }
     ],
     "intro": {
