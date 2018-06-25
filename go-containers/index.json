@@ -13,9 +13,13 @@
     },{
       "title": "Basics",
       "text": "basics1.md"
-    }, {
+    },{
       "title": "Basics",
       "text": "basics2.md"
+    }
+    ,{
+      "title": "Basics",
+      "text": "basics3.md"
     }
     ],
     "intro": {
