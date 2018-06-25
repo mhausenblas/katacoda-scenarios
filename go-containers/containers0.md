@@ -42,6 +42,6 @@ Compare the container images (note the resulting sizes!):
 
 `docker images "quay.io/mhausenblas/*"`{{execute}}
 
-If you have access to a container registry then you can now also push the container image. For example, using [Quay](https://quay.io/)), just replace `$USERNAME` with your username:
+If you have access to a container registry then you can now also push the container image. For example, using [Quay](https://quay.io/), just replace `$USERNAME` with your username:
 
 `docker push quay.io/$USERNAME/pingsvc:2`

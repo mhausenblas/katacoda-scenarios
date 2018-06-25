@@ -12,7 +12,8 @@ List all the resources we've created:
 
 `kubectl get deploy,po,svc`{{execute}}
 
-Call `pingsvc` using a jump pod:
+Wait until the pod the deployment created (something like `pingsvc-58fc565c9c-h5znn`) shows `Running` in the `STATUS` column and then
+call `pingsvc` using a jump pod like so:
 
 `kubectl run -i -t --rm jumpod --restart=Never --image=quay.io/mhausenblas/jump:0.2 curl pingsvc:8888/ping`{{execute}}
 
