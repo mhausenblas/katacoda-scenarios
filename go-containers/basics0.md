@@ -9,10 +9,10 @@ Now let's move on to a more realistic Hello World program that uses the environm
 
 Compare the output with and without the environment variable `G4O_LANG` set.
 
-Next we look at some data types. First, let's see a slice in action:
+Next we look at some data types. First, let's see a `slice` in action:
 
 `go run $G4OHOME/code/slices/main.go`{{execute}}
 
-Now a map:
+Now a `map`:
 
 `go run $G4OHOME/code/maps/main.go`{{execute}}

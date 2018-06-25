@@ -13,3 +13,7 @@ Go also supports `methods`, essentially a function with a defined receiver:
 In Go, errors are first class citizens:
 
 `go run $G4OHOME/code/errors/main.go`{{execute}}
+
+Sometimes it's useful to extract common behavior into an `interface`:
+
+`go run $G4OHOME/code/interfaces/main.go`{{execute}}
