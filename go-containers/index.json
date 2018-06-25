@@ -20,6 +20,9 @@
     ,{
       "title": "Basics",
       "text": "basics3.md"
+    }, {
+      "title": "Advanced",
+      "text": "advanced0.md"
     }
     ],
     "intro": {
