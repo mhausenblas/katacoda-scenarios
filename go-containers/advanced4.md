@@ -13,11 +13,11 @@ Call it:
 
 Clean up:
 
-`docker kill fbping`{{execute}}
+`docker kill fbping && clear`{{execute}}
 
 Now using the the light-weight approach. First, build and run it:
 
-`GOOS=linux GOARCH=amd64 go build`{execute}}
+`GOOS=linux GOARCH=amd64 go build`{{execute}}
 `docker build --tag=quay.io/mhausenblas/pingsvc:2 --file=lwDockerfile .`{{execute}}
 `docker run --rm --name lwping -d -p 8888:8888 quay.io/mhausenblas/pingsvc:2`{{execute}}
 
@@ -27,7 +27,7 @@ Call it:
 
 Clean up:
 
-`docker kill lwping`{{execute}}
+`docker kill lwping && clear`{{execute}}
 
 Compare resulting images:
 
