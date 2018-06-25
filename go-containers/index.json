@@ -20,9 +20,12 @@
     ,{
       "title": "Basics",
       "text": "basics3.md"
-    }, {
+    },{
       "title": "Advanced",
       "text": "advanced0.md"
+    },{
+      "title": "Advanced",
+      "text": "advanced1.md"
     }
     ],
     "intro": {
