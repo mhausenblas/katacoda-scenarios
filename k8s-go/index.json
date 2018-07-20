@@ -1,0 +1,54 @@
+{
+  "title": "Using the Kubernetes API with Go",
+  "description": "Learn how to use the Kubernetes API with Go",
+  "difficulty": "intermediate",
+  "time": "340 minutes",
+  "details": {
+    "steps": [{
+      "title": "Content",
+      "text": "content.md"
+    },{
+      "title": "API basics",
+      "text": "api-basics.md"
+    },{
+      "title": "Client-go Basics",
+      "text": "client-go-basics.md"
+    },{
+      "title": "CRDs from user point of view",
+      "text": "crd-user.md"
+    },{
+      "title": "CRDs from developer point of view",
+      "text": "crd-dev.md"
+    },{
+      "title": "Writing controllers",
+      "text": "controllers.md"
+    },{
+      "title": "Advanced",
+      "text": "other.md"
+    }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "prelaunch.sh",
+      "code": "postlaunch.sh",
+      "credits": "Kudos to the Go community"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{
+        "file": ".vimrc",
+        "target": "~/"
+      }
+    ]
+  }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "icon": "fa-kubernetes"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
