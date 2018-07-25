@@ -7,3 +7,7 @@ In one terminal, do:
 Now open a second terminal (using the `+` button):
 
 `curl 127.0.0.1:8001/apis/`{{execute}}
+
+Alternatively:
+
+`kubectl get --raw=/apis{{execute}}
