@@ -6,11 +6,11 @@ Change into the `$K8SGOHOME/client-go-basic/` directory:
 
 First need to make sure the [dependencies](https://github.com/openshift-talks/k8s-go/blob/master/Gopkg.toml) are installed (you only need to do it once):
 
-`dep ensure``{{execute}}
+`dep ensure`{{execute}}
 
 Now you can execute [main.go](https://github.com/openshift-talks/k8s-go/blob/master/client-go-basic/main.go):
 
-`go run main.go``{{execute}}
+`go run main.go`{{execute}}
 
 You should see something like the following as the output:
 
