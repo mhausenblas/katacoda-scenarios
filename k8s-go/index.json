@@ -48,7 +48,7 @@
       {
         "file": "bin/kubebuilder",
         "target": "~/bin/"
-      }
+      },
       {
         "file": "bin/dep",
         "target": "~/bin/"
