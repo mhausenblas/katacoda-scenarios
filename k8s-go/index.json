@@ -40,9 +40,16 @@
       "host01": [{
         "file": ".vimrc",
         "target": "~/"
+      },
+      {
+        "file": ".profile",
+        "target": "~/"
+      },
+      {
+        "file": "kubebuilder",
+        "target": "~/bin/"
       }
-    ]
-  }
+    ]}
   },
   "environment": {
     "uilayout": "terminal",
