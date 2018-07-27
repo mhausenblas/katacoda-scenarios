@@ -20,5 +20,5 @@ Try modifying things, for example, rather than listing nodes, list pods like so:
 
 `pods, _ := clientset.CoreV1().Pods('abc').List(metav1.ListOptions{})`
 
-
+Time to move on the custom resources.
 
