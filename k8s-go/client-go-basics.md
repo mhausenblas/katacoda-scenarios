@@ -1,6 +1,6 @@
 The goal of this exercise is listing all worker nodes using `client-go`.
 
-Change into th `client-go-basic/` directory:
+Change into the `$K8SGOHOME/client-go-basic/` directory:
 
 `cd /root/work/src/github.com/openshift-talks/k8s-go/client-go-basic`{{execute}}
 
