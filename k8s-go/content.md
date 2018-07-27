@@ -2,4 +2,4 @@ The content of [openshift-talks/k8s-go](https://github.com/openshift-talks/k8s-g
 
 `cd /root/work/src/github.com/openshift-talks/k8s-go/`{{execute}}
 
-This playground supports both Go and Kubernetes.
+This playground supports Go 1.10 and Kubernetes 1.10.
