@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+if ! which dep &>/dev/null; then
+   echo "Installing dep via: curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh"
+   mkdir -p $GOPATH/bin
+   curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+fi
+
+exec $GOPATH/bin/dep "$@"
