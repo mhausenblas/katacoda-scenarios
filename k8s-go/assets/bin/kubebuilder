@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-if [ ! -x /usr/local/kubebuilder ]; then
+if [ ! -e /usr/local/kubebuilder ]; then
    echo "Installing https://github.com/kubernetes-sigs/kubebuilder/releases/download/v1.0.0/kubebuilder_1.0.0_linux_amd64.tar.gz"
    curl -sSLf 'https://github.com/kubernetes-sigs/kubebuilder/releases/download/v1.0.0/kubebuilder_1.0.0_linux_amd64.tar.gz' | tar -xz -C /usr/local
    ln -sf kubebuilder_1.0.0_linux_amd64 /usr/local/kubebuilder
