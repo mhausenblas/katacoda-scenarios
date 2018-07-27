@@ -46,7 +46,7 @@
         "target": "~/"
       },
       {
-        "file": "kubebuilder",
+        "file": "bin/kubebuilder",
         "target": "~/bin/"
       }
     ]}
