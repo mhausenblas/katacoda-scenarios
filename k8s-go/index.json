@@ -52,6 +52,10 @@
       {
         "file": "bin/dep",
         "target": "~/bin/"
+      },
+      {
+        "file": "bin/operator-sdk",
+        "target": "~/bin/"
       }
     ]}
   },
