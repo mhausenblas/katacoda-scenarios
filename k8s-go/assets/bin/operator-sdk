@@ -1,0 +1,18 @@
+#!/bin/bash -e
+
+if [ ! -f $GOPATH/bin/operator-sdk ]; then
+   echo "Installing operator-sdk into \$GOPATH/bin"
+   set -x
+   mkdir -p $GOPATH/bin
+   mkdir -p $GOPATH/src/github.com/operator-framework
+   cd $GOPATH/src/github.com/operator-framework
+   rm -rf operator-sdk
+   git clone https://github.com/operator-framework/operator-sdk
+   cd operator-sdk
+   git checkout master
+   make dep
+   make install
+   set +x
+fi
+
+exec $GOPATH/bin/operator-sdk "$@"
