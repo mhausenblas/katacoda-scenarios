@@ -2,7 +2,6 @@
 
 if [ ! -f $GOPATH/bin/operator-sdk ]; then
    echo "Installing operator-sdk into \$GOPATH/bin"
-   set -x
    mkdir -p $GOPATH/bin
    mkdir -p $GOPATH/src/github.com/operator-framework
    cd $GOPATH/src/github.com/operator-framework
@@ -12,7 +11,6 @@ if [ ! -f $GOPATH/bin/operator-sdk ]; then
    git checkout master
    make dep
    make install
-   set +x
 fi
 
 exec $GOPATH/bin/operator-sdk "$@"
