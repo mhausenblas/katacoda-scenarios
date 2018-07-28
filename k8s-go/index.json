@@ -46,6 +46,10 @@
         "target": "~/"
       },
       {
+        "file": ".bash_profile",
+        "target": "~/"
+      },
+      {
         "file": "bin/kubebuilder",
         "target": "~/bin/"
       },

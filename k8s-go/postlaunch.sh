@@ -1,3 +1,3 @@
-export PS1='${PWD#"${PWD%/*/*}/"} \$ '
+source ~/.profile
 export GOPATH=/root/work
 export K8SGOHOME=/root/work/src/github.com/openshift-talks/k8s-go
