@@ -4,7 +4,7 @@ Change into the `$K8SGOHOME/client-go-basic/` directory:
 
 `cd /root/work/src/github.com/openshift-talks/k8s-go/client-go-basic`{{execute}}
 
-First need to make sure the [dependencies](https://github.com/openshift-talks/k8s-go/blob/master/Gopkg.toml) are installed (you only need to do it once):
+First need to make sure the [dependencies](https://github.com/openshift-talks/k8s-go/blob/master/client-go-basic/Gopkg.toml) are installed (you only need to do it once):
 
 `dep ensure`{{execute}}
 
