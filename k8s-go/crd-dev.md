@@ -13,3 +13,5 @@ Now you can generate the code implementing the CRD using the following command:
 Finally, we can execute the client using above generated code:
 
 `go run main.go`{{execute}}
+
+Bonus: if you have time left, change the code to list all pods in all namespaces and filter for the ones that have a `HealthCheckPolicy` set.
