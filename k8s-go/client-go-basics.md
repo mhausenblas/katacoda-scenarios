@@ -32,11 +32,17 @@ You can now launch the informer like so (note that it takes tens of seconds unti
 
 `go run main.go`{{execute T1}}
 
-Once you see `Can't get updates on pod `shell`: pod "shell" not found` you can proceed to launch a pod in a second terminal:
+Once you see `Can't get updates: pod "shell" not found` you can proceed to launch a pod in a second terminal:
 
 `kubectl run -i -t --rm shell --restart=Never --image=quay.io/mhausenblas/jump:0.2 -- sh`{{execute T2}}
 
-Now check the output of the second terminal and once you see `If you don't see a command prompt, try pressing enter.` you can switch back to the first terminal.
+Now check the output of the second terminal and once the following appears: 
+
+`If you don't see a command prompt, try pressing enter.` 
+
+… you can switch back to the first terminal where you should see something like this:
+
+`Labels of pod `shell`: map[run:shell]`
 
 OK, with that you know the basics of `client-go` and now it's time to move on the custom resources.
 
