@@ -7,7 +7,7 @@ Change into the `$K8SGOHOME/crd-yaml/` directory:
 
 First, you will install the pre-defined [HealthCheckPolicy](https://github.com/openshift-talks/k8s-go/blob/master/crd-yaml/healthcheckpolicy-crd.yaml) CRD type like so:
 
-`kubectl create -f healthcheckpolicy-crd.yaml`{{execute}}
+`kubectl apply -f healthcheckpolicy-crd.yaml`{{execute}}
 
 Check if the CRD is available:
 
@@ -15,7 +15,7 @@ Check if the CRD is available:
 
 Now you can create an instance of this `HealthCheckPolicy` CRD using the [example health check policy](https://github.com/openshift-talks/k8s-go/blob/master/crd-yaml/example-healthcheckpolicy.yaml) prepared:
 
-`kubectl create -f example-healthcheckpolicy.yaml`{{execute}}
+`kubectl apply -f example-healthcheckpolicy.yaml`{{execute}}
 
 And check if the instance has been created:
 
