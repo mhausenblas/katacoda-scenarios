@@ -20,10 +20,21 @@ Try modifying things, for example, rather than listing nodes, list pods like so:
 
 `pods, _ := clientset.CoreV1().Pods('abc').List(metav1.ListOptions{})`
 
+Next, we look at informers. For that, change into the `$K8SGOHOME/client-go-informer/` directory:
 
-Next, we look at informers:
+`cd /root/work/src/github.com/openshift-talks/k8s-go/client-go-informer`{{execute}}
 
-`kubectl run webserver --image=nginx:1.13`
+And again, make sure the [dependencies](https://github.com/openshift-talks/k8s-go/blob/master/client-go-informer/Gopkg.toml) are installed, here:
+
+`dep ensure`{{execute}}
+
+Now, we need to launch a pod in a second terminal:
+
+`kubectl run webserver --image=nginx:1.13`{{execute T2}}
+
+And in the first terminal (left-most one) you can now launch the informer:
+
+`go run main.go`{{execute T1}}
 
 Time to move on the custom resources.
 
