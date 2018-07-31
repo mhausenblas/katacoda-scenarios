@@ -21,4 +21,6 @@ And check if the instance has been created:
 
 `kubectl get healthcheckpolicies`{{execute}}
 
+Bonus: if you have time left, try adding support for OpenAPI v3 schema validation (slides 50/51).
+
 Now that we know how to create CRDs from an end-user perspective, let's move on to the programmatic part.
