@@ -22,12 +22,10 @@ To confirm, read back the annotation using two different methods:
 
 `kubectl get namespace default -o json`{{execute T2}}
 
-`curl http://127.0.0.1:8001/api/v1/namespaces/default`{{execute T2}}
+`curl 127.0.0.1:8001/api/v1/namespaces/default`{{execute T2}}
 
 And now we update that annotation using `curl`, changing the value of the `workshop` key from `gopherconuk` to a timestamp:
 
-`curl http://127.0.0.1:8001/api/v1/namespaces/default | \
- jq ".metadata.annotations[\"workshop\"] = \"$(date)\"" | \ 
- curl -H "Content-Type: application/json" -X PUT -d @- http://127.0.0.1:8001/api/v1/namespaces/default`{{execute T2}}
+`curl http://127.0.0.1:8001/api/v1/namespaces/default | jq ".metadata.annotations[\"workshop\"] = \"$(date)\"" | curl -H "Content-Type: application/json" -X PUT -d @- http://127.0.0.1:8001/api/v1/namespaces/default`{{execute T2}}
 
 That was fun! Now it's time for switching gears and moving to Go: meet the `client-go` library.
