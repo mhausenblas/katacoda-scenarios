@@ -6,10 +6,6 @@ Make sure the `HealthCheckPolicy` CRD is available:
 
 `kubectl get crd`{{execute}}
 
-As usual, first make sure the [dependencies](https://github.com/openshift-talks/k8s-go/blob/master/crd-go/Gopkg.toml) are installed:
-
-`dep ensure`{{execute}}
-
 Now you can generate the code implementing the CRD using the following command:
 
 `hack/update-codegen.sh`{{execute}}
