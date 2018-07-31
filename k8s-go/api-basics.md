@@ -14,4 +14,20 @@ Alternatively, instead of `curl` you can also use the raw mode of `kubectl`, aga
 
 `kubectl get --raw=/apis`{{execute T2}}
 
+Now we first annotate the `default` namespace with `kubectl` and then, using `curl` we update the representation using the JSON payload:
+
+`kubectl annotate namespace default workshop=gopherconuk`{{execute T2}}
+
+To confirm, read back the annotation using two different methods:
+
+`kubectl get namespace default -o json`{{execute T2}}
+
+`curl http://127.0.0.1:8001/api/v1/namespaces/default`{{execute T2}}
+
+And now we update that annotation using `curl`, changing the value of the `workshop` key from `gopherconuk` to a timestamp:
+
+`curl http://127.0.0.1:8001/api/v1/namespaces/default | \
+ jq ".metadata.annotations[\"workshop\"] = \"$(date)\"" | \ 
+ curl -H "Content-Type: application/json" -X PUT -d @- http://127.0.0.1:8001/api/v1/namespaces/default`{{execute T2}}
+
 That was fun! Now it's time for switching gears and moving to Go: meet the `client-go` library.
