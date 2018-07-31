@@ -23,12 +23,6 @@
       "title": "Writing controllers",
       "text": "controllers.md"
     },{
-      "title": "Using kubebuilder",
-      "text": "kubebuilder.md"
-    }, {
-      "title": "Using Operator SDK",
-      "text": "operatorsdk.md"
-    },{
       "title": "Advanced",
       "text": "other.md"
     }

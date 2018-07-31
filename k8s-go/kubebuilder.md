@@ -10,6 +10,11 @@ Then create the CRD code:
 
 `kubebuilder create api --group policy --version v1beta1 --kind HealthCheckPolicy`{{execute}}
 
+Now you're in an interactive setup; answer the following two questions with `y` (yes):
+
+- `Create Resource under pkg/apis [y/n]?`
+- `Create Controller under pkg/controller [y/n]?`
+
 Next, install the CRDs like so:
 
 `make install`{{execute}}
