@@ -1,0 +1,13 @@
+{
+  "title": "Learn Kubernetes API with Go",
+  "description": "GopherCon UK",
+  "courses": [
+    {
+      "course_id": "k8s-go",
+      "pathway_id": "mhausenblas",
+      "id": "k8s-go",
+      "title": "Using the Kubernetes API with Go",
+      "description": "Learn how to use the Kubernetes API with Go"
+    }
+  ]
+}
