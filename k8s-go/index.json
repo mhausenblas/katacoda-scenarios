@@ -11,17 +11,23 @@
       "title": "API basics",
       "text": "api-basics.md"
     },{
-      "title": "Client-go Basics",
+      "title": "Client-go basics",
       "text": "client-go-basics.md"
     },{
-      "title": "CRDs from user point of view",
+      "title": "CRDs for users",
       "text": "crd-user.md"
     },{
-      "title": "CRDs from developer point of view",
+      "title": "CRDs for developers",
       "text": "crd-dev.md"
     },{
       "title": "Writing controllers",
       "text": "controllers.md"
+    },{
+      "title": "Using kubebuilder",
+      "text": "kubebuilder.md"
+    }, {
+      "title": "Using Operator SDK",
+      "text": "operatorsdk.md"
     },{
       "title": "Advanced",
       "text": "other.md"
