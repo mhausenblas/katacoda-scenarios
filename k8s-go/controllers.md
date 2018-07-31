@@ -2,7 +2,11 @@ Change into the `$K8SGOHOME/controller/` directory:
 
 `cd /root/work/src/github.com/openshift-talks/k8s-go/controller`{{execute}}
 
-Run the prepared controller via this command:
+As usual, first make sure the [dependencies](https://github.com/openshift-talks/k8s-go/blob/master/controller/Gopkg.toml) are installed:
+
+`dep ensure`{{execute}}
+
+Run the prepared controller via these two commands:
 
 `kubectl apply -f config/healthcheckpolicy-crd.yaml`{{execute}}
 
