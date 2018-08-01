@@ -7,19 +7,19 @@ Change into the `$K8SGOHOME/crd-yaml/` directory:
 
 First, you will install the pre-defined [HealthCheckPolicy](https://github.com/openshift-talks/k8s-go/blob/master/crd-yaml/healthcheckpolicy-crd.yaml) CRD type like so:
 
-`kubectl apply -f healthcheckpolicy-crd.yaml`{{execute}}
+`kubectl -n default apply -f healthcheckpolicy-crd.yaml`{{execute}}
 
 Check if the CRD is available:
 
-`kubectl get crd`{{execute}}
+`kubectl -n default get crd`{{execute}}
 
 Now you can create an instance of this `HealthCheckPolicy` CRD using the [example health check policy](https://github.com/openshift-talks/k8s-go/blob/master/crd-yaml/example-healthcheckpolicy.yaml) prepared:
 
-`kubectl apply -f example-healthcheckpolicy.yaml`{{execute}}
+`kubectl -n default apply -f example-healthcheckpolicy.yaml`{{execute}}
 
 And check if the instance has been created:
 
-`kubectl get healthcheckpolicies`{{execute}}
+`kubectl -n default get healthcheckpolicies`{{execute}}
 
 Bonus: if you have time left, try adding support for OpenAPI v3 schema validation (slides 50/51).
 
