@@ -4,7 +4,7 @@ Change into the `$K8SGOHOME/controller/` directory:
 
 Run the prepared controller via these two commands:
 
-`kubectl apply -f config/healthcheckpolicy-crd.yaml`{{execute T1}}
+`kubectl -n default apply -f config/healthcheckpolicy-crd.yaml`{{execute T1}}
 
 … and then:
 
@@ -12,7 +12,7 @@ Run the prepared controller via these two commands:
 
 Now create a test resource (in the second terminal) using:
 
-`kubectl apply -f config/example-healthcheckpolicy.yaml`{{execute T2}}
+`kubectl  -n default apply -f config/example-healthcheckpolicy.yaml`{{execute T2}}
 
 Go back to the first terminal and observe the output.
 
