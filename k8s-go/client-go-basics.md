@@ -34,7 +34,7 @@ You can now launch the informer like so (note that it takes tens of seconds unti
 
 Once you see `Can't get updates: pod "shell" not found` you can proceed to launch a pod in a second terminal:
 
-`kubectl run -i -t --rm shell --restart=Never --image=quay.io/mhausenblas/jump:0.2 -- sh`{{execute T2}}
+`kubectl -n default run -i -t --rm shell --restart=Never --image=quay.io/mhausenblas/jump:0.2 -- sh`{{execute T2}}
 
 Now check the output of the second terminal and once the following appears: 
 
