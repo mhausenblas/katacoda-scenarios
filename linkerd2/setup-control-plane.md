@@ -14,7 +14,7 @@ Once all the pods started are ready, it is possible to also view the Linkerd2 se
 
 At this point you'd normally use `linkerd dashboard`. Because this tutorial is running in Katacoda, we need to do a little extra work. Run:
 
-`./tunnel-dashboard.sh`{{execute}}
+`kubectl apply -f loadbalancer/`{{execute}}
 
 This will start the dashboard and setup a tunnel for you to view it from. Cut and paste the URL that is output into your browser.
 
