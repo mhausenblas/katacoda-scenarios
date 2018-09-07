@@ -26,9 +26,9 @@
     "assets": {
       "host01": [
         {"file": "cloudprovider.yaml", "target": "~/loadbalancer" },
-        {"file": "loadbalancer.yaml", "target": "~/loadbalancer"}
+        {"file": "loadbalancer.yaml", "target": "~/loadbalancer"},
         {"file": "expose-dashboard.sh", "target": "~", "chmod": "+x"},
-        {"file": "expose-dashboard.sh", "target": "~", "chmod": "+x"},
+        {"file": "expose-dashboard.sh", "target": "~", "chmod": "+x"}
       ]
     }
   },
