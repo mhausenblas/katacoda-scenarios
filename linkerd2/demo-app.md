@@ -1,6 +1,6 @@
 Finally, it’s time to install a demo application and add it to the service mesh.
 
-Fetch the demo, add conduit to it and apply to your cluster:
+Fetch the demo, add Linkerd2 to it and apply it to your cluster using the following commands:
 
 `wget  https://raw.githubusercontent.com/runconduit/conduit-examples/master/emojivoto/emojivoto.yml`{{execute}}
 
