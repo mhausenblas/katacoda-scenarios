@@ -34,8 +34,6 @@
   },
   "icon": "fa-kubernetes",
   "environment": {
-    "showdashboard": true,
-    "dashboards": [{"name": "Linkerd Dashboard", "port": 46796}],
     "uilayout": "terminal",
     "hidefinish": false
   },

@@ -13,7 +13,7 @@ if [ $? -ne 0 ]; then
     --pidfile /tmp/dashboard.pid \
     -S \
     --startas /bin/bash \
-    -- -c "exec $(pwd)/.linkerd2/bin/linkerd dashboard --port 8080 --url &> /root/dashboard.log"
+    -- -c "exec linkerd dashboard --port 8080 &> /root/dashboard.log"
 fi
 
 start-stop-daemon --status --pidfile /tmp/ngrok-dashboard.pid
