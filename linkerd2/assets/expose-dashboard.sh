@@ -2,8 +2,6 @@
 
 kubectl apply -f loadbalancer/
 
-# sleep 60
-
 kubectl patch -n=linkerd svc web --patch '{ "spec": {"type": "LoadBalancer" } }'
 
 start-stop-daemon --status --pidfile /tmp/dashboard.pid
@@ -20,6 +18,10 @@ fi
 
 printf "The dashboard is available at:\n\n"
 
-echo $(kubectl get -n=linkerd svc/web -o go-template='{{(index .status.loadBalancer.ingress 0).ip}}')
+sleep 30
+
+# note: this is an IP in the private range, need to make it publicly available:
+
+echo http://$(kubectl get -n=linkerd svc/web -o go-template='{{(index .status.loadBalancer.ingress 0).ip}}'):8084/
 
 printf "\ncut and paste this URL into your browser.\n"
