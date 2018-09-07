@@ -1,0 +1,41 @@
+{
+  "title": "Linkerd2 - Getting Started",
+  "description": "An ultralight service mesh for Kubernetes.",
+  "difficulty": "beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Setup Linkerd2 CLI",
+      "text": "setup-conduit-cli.md"
+    }, {
+      "title": "Step 2 - Setup Linkerd2 Plane",
+      "text": "setup-control-plane.md"
+    }, {
+      "title": "Step 3 - Install the demo app",
+      "text": "demo-app.md"
+    }, {
+      "title": "Step 4 - Watch it run",
+      "text": "watch-it-run.md"
+    }],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "tunnel-dashboard.sh", "target": "~/", "chmod": "+x"},
+        {"file": "tunnel-emojivoto.sh", "target": "~/", "chmod": "+x"}
+      ]
+    }
+  },
+  "icon": "fa-kubernetes",
+  "environment": {
+    "uilayout": "terminal",
+    "hidefinish": false
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
