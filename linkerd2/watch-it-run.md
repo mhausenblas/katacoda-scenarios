@@ -31,4 +31,4 @@ To view details per deployment, run:
 
 To see a live pipeline of requests for your application, run:
 
-`linkerd -n emojivoto tap deploy emojivoto/voting`{{execute}}
+`linkerd -n emojivoto tap deploy voting`{{execute}}
