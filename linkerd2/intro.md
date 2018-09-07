@@ -1,4 +1,4 @@
-<img align="left" src="https://raw.githubusercontent.com/cncf/artwork/master/linkerd/horizontal/color/linkerd-horizontal-white.png" />
+<img align="left" src="https://raw.githubusercontent.com/cncf/artwork/master/linkerd/horizontal/color/linkerd-horizontal-color.png" />
 
 Linkerd2 has two basic components: a data plane comprised of lightweight proxies, which are deployed as sidecar containers alongside your service code, and a control plane of processes that coordinate and manage these proxies. Humans interact with the service mesh via a command-line interface (CLI) or a web app that you use to control the cluster.
 
