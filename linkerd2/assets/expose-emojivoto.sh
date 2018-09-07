@@ -2,7 +2,7 @@
 
 kubectl apply -f loadbalancer/
 
-sleep 30
+sleep 20
 
 start-stop-daemon --status --pidfile /tmp/ngrok-emojivoto.pid
 
