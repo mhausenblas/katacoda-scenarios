@@ -10,14 +10,16 @@ spec:
         name: kube-keepalived-vip
     spec:
       hostNetwork: true
-      containers:        - image: gcr.io/google_containers/kube-keepalived-vip:0.9
+      containers:
+        - image: gcr.io/google_containers/kube-keepalived-vip:0.9
           name: kube-keepalived-vip
           imagePullPolicy: Always
           securityContext:
             privileged: true
           volumeMounts:
             - mountPath: /lib/modules
-              name: modules              readOnly: true
+              name: modules
+              readOnly: true
             - mountPath: /dev
               name: dev
           # use downward API

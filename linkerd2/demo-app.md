@@ -14,7 +14,7 @@ As with `linkerd install`, in this command, the Linkerd2 CLI is simply doing tex
 
 The pattern of injecting Linkerd2's configuration in this matter is convenient because you can introduce additional filters into the pipeline, or run the commands separately and inspect the output of each one.
 
-Take a look at what's actually happening by running a diff on the before and after:
+Take a look at what's actually happening by running a diff on the before and after (hint: press `q` to exit the `git diff` view):
 
 `git diff --no-index -- emojivoto.yml linkerd-emojivoto.yml`{{execute}}
 

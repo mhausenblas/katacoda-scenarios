@@ -1,10 +1,10 @@
 If you glance at the Linkerd2 dashboard, you should see all the HTTP/2 and HTTP/1-speaking services in the demo app show up in the list of deployments that have been added to the Linkerd2 mesh.
 
-View the demo app by starting up a tunnel to it:
+View the demo app by querying the URL like so:
 
-`./tunnel-emojivoto.sh`{{execute}}
+`kubectl get -n=emojivoto svc/web-svc -o go-template='{{(index .status.loadBalancer.ingress 0).ip}}'`{{execute}}
 
-Finally, let’s take a look back at our dashboard (you can get the URL to it again by running `./tunnel-dashboard.sh`. You should be able to browse all the services that are running as part of the application to view:
+Finally, let’s take a look back at our dashboard. You should be able to browse all the services that are running as part of the application to view:
 
 - Success rates
 - Request rates

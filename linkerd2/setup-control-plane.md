@@ -4,7 +4,7 @@ Now that you have the CLI running locally, it’s time to install the Linkerd2 c
 
 This generates a Kubernetes config, and pipes it to `kubectl`, which then applies the config to your Kubernetes cluster.
 
-Let's wait until everything is up and running. An easy way to do that is:
+Let's wait until everything is up and running, which may take up to a minute. An easy way to do that is:
 
 `watch kubectl --namespace=linkerd get po -l linkerd.io/control-plane-ns=linkerd`{{execute}}
 
