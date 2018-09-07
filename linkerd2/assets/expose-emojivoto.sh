@@ -1,5 +1,9 @@
 #!/bin/bash
 
+kubectl apply -f loadbalancer/
+
+sleep 30
+
 start-stop-daemon --status --pidfile /tmp/ngrok-emojivoto.pid
 
 if [ $? -ne 0 ]; then
@@ -9,7 +13,7 @@ if [ $? -ne 0 ]; then
     --pidfile /tmp/ngrok-emojivoto.pid \
     -S \
     --startas /bin/bash \
-    -- -c "exec /usr/local/bin/ngrok http --log stdout --log-level debug $(minikube -n emojivoto service web-svc --url | cut -d/ -f3) &> /root/ngrok-emojivoto.log"
+    -- -c "exec /usr/local/bin/ngrok http --log stdout --log-level debug 80 &> /root/ngrok-emojivoto.log"
   sleep 3
 fi
 

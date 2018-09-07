@@ -2,7 +2,7 @@ If you glance at the Linkerd2 dashboard, you should see all the HTTP/2 and HTTP/
 
 View the demo app by querying the URL like so:
 
-`kubectl get -n=emojivoto svc/web-svc -o go-template='{{(index .status.loadBalancer.ingress 0).ip}}'`{{execute}}
+`./expose-emojivoto.sh`{{execute}}
 
 Finally, let’s take a look back at our dashboard. You should be able to browse all the services that are running as part of the application to view:
 
