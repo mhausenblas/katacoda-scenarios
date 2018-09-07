@@ -6,7 +6,7 @@ This generates a Kubernetes config, and pipes it to `kubectl`, which then applie
 
 Let's wait until everything is up and running. An easy way to do that is:
 
-`watch kubectl --namespace=linkerd get po -l conduit.io/control-plane-ns=linkerd`{{execute}}
+`watch kubectl --namespace=linkerd get po -l linkerd.io/control-plane-ns=linkerd`{{execute}}
 
 Once all the pods started are ready, it is possible to also view the Linkerd2 server's version:
 

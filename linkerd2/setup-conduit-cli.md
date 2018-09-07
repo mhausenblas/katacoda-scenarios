@@ -4,7 +4,7 @@ As this is your first time running Linkerd2, you’ll need to download the comma
 
 Next, add Linkerd2 to your path with:
 
-`export PATH=$PATH:$HOME/.linkerd/bin`{{execute}}
+`export PATH=$PATH:$HOME/.linkerd2/bin`{{execute}}
 
 Verify the CLI is installed and running correctly with:
 
