@@ -1,10 +1,10 @@
-Now that you have the CLI running locally, it’s time to install the Linkerd2 control plane onto your Kubernetes cluster. Don’t worry if you already have things running on this cluster—the control plane will be installed in a separate `linkerd` namespace where it can easily be removed.
+It’s time to install the control plane onto your Kubernetes cluster. We will install the control plan in a dedicated `linkerd` namespace where it can easily be removed. Ready? Here we go:
 
 `linkerd install | kubectl apply -f -`{{execute}}
 
-This generates a Kubernetes config, and pipes it to `kubectl`, which then applies the config to your Kubernetes cluster.
+Above generates a bunch of Kubernetes resources and pipes it to `kubectl` which then applies it to your Kubernetes cluster.
 
-Let's wait until everything is up and running, which may take up to a minute. An easy way to do that is the following (hint: use `CTRL+C` to stop the `watch` command to updating you once you see all pods in the `Running` status):
+Let's wait until everything is up and running, which may take a minute or so. An easy way to do that is the following (hint: use `CTRL+C` to stop the `watch` command to updating you once you see all pods in the `Running` status):
 
 `watch kubectl --namespace=linkerd get po -l linkerd.io/control-plane-ns=linkerd`{{execute}}
 

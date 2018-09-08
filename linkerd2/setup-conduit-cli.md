@@ -6,7 +6,7 @@ Next, add Linkerd2 to your path with:
 
 `export PATH=$PATH:$HOME/.linkerd2/bin`{{execute}}
 
-Verify the CLI is installed and running correctly with:
+Verify that the CLI is installed and is running correctly with the following command:
 
 `linkerd version`{{execute}}
 
