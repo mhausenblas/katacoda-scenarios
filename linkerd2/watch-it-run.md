@@ -4,7 +4,7 @@ View the demo app by querying the URL like so:
 
 `./expose-emojivoto.sh`{{execute}}
 
-![emoji vote demo app](../../assets/img/emojivote.png)
+![emoji vote demo app](assets/img/emojivote.png)
 
 Finally, let’s take a look back at our dashboard. You should be able to browse all the services that are running as part of the application to view:
 
