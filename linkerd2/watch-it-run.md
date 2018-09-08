@@ -4,6 +4,8 @@ View the demo app by querying the URL like so:
 
 `./expose-emojivoto.sh`{{execute}}
 
+![emoji vote demo app](../../assets/img/emojivote.png)
+
 Finally, let’s take a look back at our dashboard. You should be able to browse all the services that are running as part of the application to view:
 
 - Success rates
@@ -15,11 +17,11 @@ As well as various other bits of information about live traffic. Neat, huh?
 
 Views available in the dashboard:
 
-SERVICE MESH
+### SERVICE MESH
 
 Displays continuous health metrics of the control plane itself, as well as high-level health metrics of deployments in the data plane.
 
-DEPLOYMENTS
+### DEPLOYMENTS
 
 Lists all deployments by requests, success rate, and latency.
 
