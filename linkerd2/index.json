@@ -28,8 +28,7 @@
         {"file": "cloudprovider.yaml", "target": "~/loadbalancer" },
         {"file": "loadbalancer.yaml", "target": "~/loadbalancer"},
         {"file": "expose-emojivoto.sh", "target": "~", "chmod": "+x"},
-        {"file": "expose-dashboard.sh", "target": "~", "chmod": "+x"},
-        {"file": "control-plane.png", "target": "~/img"}
+        {"file": "expose-dashboard.sh", "target": "~", "chmod": "+x"}
       ]
     }
   },
