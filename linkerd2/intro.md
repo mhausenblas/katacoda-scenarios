@@ -1,5 +1,5 @@
-<div style="border-bottom: 1px solid #0a0a0a;">
- <img src="https://raw.githubusercontent.com/cncf/artwork/master/linkerd/horizontal/color/linkerd-horizontal-color.png" width="60%" />
+<div style="border-bottom: 1px solid #0a0a0a; padding: 20px;">
+ <img src="https://raw.githubusercontent.com/cncf/artwork/master/linkerd/horizontal/color/linkerd-horizontal-color.png" width="40%" />
  </div>
 
 Linkerd2 has two basic components:
