@@ -1,5 +1,7 @@
 <img align="left" src="https://raw.githubusercontent.com/cncf/artwork/master/linkerd/horizontal/color/linkerd-horizontal-color.png" width="60%" />
 
+<hr />
+
 Linkerd2 has two basic components:
 
 - a *data plane* comprised of lightweight proxies, which are deployed as sidecar containers alongside your service code
