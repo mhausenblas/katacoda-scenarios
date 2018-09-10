@@ -6,7 +6,7 @@ You may want to stick around and explore the Linkerd2 web console a bit more:
 
 OK, so what's next? Well, from here you could:
 
-- Check out the [overview doc](/docs) and the [roadmap doc](/roadmap).
+- Check out the [overview doc](https://linkerd.io/2/overview/) and the [roadmap doc](https://linkerd.io/2/roadmap/).
 - Hop on the `#conduit` channel on [the Linkerd Slack](https://slack.linkerd.io).
 - Browse through the [Conduit forum](https://discourse.linkerd.io/c/linkerd2).
 - Follow [@linkerd](https://twitter.com/linkerd) on Twitter.
