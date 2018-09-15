@@ -2,7 +2,7 @@ If you glance at the Linkerd2 dashboard, you should see all the HTTP/2 and HTTP/
 
 View the demo app by querying the URL like so:
 
-`./expose-emojivoto.sh`{{execute}}
+`oc expose svc`{{execute}}
 
 ![emoji vote demo app](assets/emojivote.png)
 

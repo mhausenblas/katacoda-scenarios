@@ -1,12 +1,12 @@
 It’s time to install the control plane onto your Kubernetes cluster. We will install the control plan in a dedicated `linkerd` namespace where it can easily be removed. Ready? Here we go:
 
-`linkerd install | kubectl apply -f -`{{execute}}
+`oc new-project linkerd && linkerd install | oc apply -f -`{{execute}}
 
 Above generates a bunch of Kubernetes resources and pipes it to `kubectl` which then applies it to your Kubernetes cluster.
 
 Let's wait until everything is up and running, which may take a minute or so. An easy way to do that is the following (hint: use `CTRL+C` to stop the `watch` command to updating you once you see all pods in the `Running` status):
 
-`watch kubectl --namespace=linkerd get po -l linkerd.io/control-plane-ns=linkerd`{{execute}}
+`watch oc get po -l linkerd.io/control-plane-ns=linkerd`{{execute}}
 
 Once all the pods started are ready, it is possible to also view the Linkerd2 server's version:
 
@@ -14,8 +14,6 @@ Once all the pods started are ready, it is possible to also view the Linkerd2 se
 
 At this point you'd normally use `linkerd dashboard`. Because this tutorial is running in Katacoda, we need to do a little extra work. Run:
 
-`./expose-dashboard.sh`{{execute}}
-
-This will start the dashboard and setup a tunnel for you to view it from. Cut and paste the URL that is output into your browser.
+`oc expose svc `{{execute}}
 
 You've not added any services to the mesh yet, so the dashboard won’t have much to display beyond the status of the service mesh itself. Let's run something!

@@ -6,7 +6,7 @@ Fetch the demo, add Linkerd2 to it and apply it to your cluster using the follow
 
 `cat emojivoto.yml | linkerd inject - > linkerd-emojivoto.yml`{{execute}}
 
-`cat linkerd-emojivoto.yml | kubectl apply -f -`{{execute}}
+`cat linkerd-emojivoto.yml | oc apply -f -`{{execute}}
 
 These commands download the Kubernetes config for an example gRPC application where users can vote for their favorite emoji, then runs the config through `linkerd inject`. The config has the Linkerd2 data plane proxies injected as sidecar containers in the demo's pods and `kubectl` takes care of applying this configuration to your cluster.
 
