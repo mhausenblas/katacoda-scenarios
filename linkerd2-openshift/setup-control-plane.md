@@ -1,6 +1,6 @@
 It’s time to install the control plane onto your Kubernetes cluster. We will install the control plan in a dedicated `linkerd` namespace where it can easily be removed. Ready? Here we go:
 
-`oc new-project linkerd && linkerd install | oc apply -f -`{{execute}}
+`oc new-project linkerd && linkerd install | sed -e '/kind: Namespace/,+3d' | oc apply -f -`{{execute}}
 
 Above generates a bunch of Kubernetes resources and pipes it to `kubectl` which then applies it to your Kubernetes cluster.
 
