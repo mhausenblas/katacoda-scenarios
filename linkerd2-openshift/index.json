@@ -18,31 +18,12 @@
       "text": "watch-it-run.md"
     }],
     "intro": {
+      "courseData": "env-init.sh",
+      "code": "set-env.sh",
       "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [{
-          "file": "cloudprovider.yaml",
-          "target": "~/loadbalancer"
-        },
-        {
-          "file": "loadbalancer.yaml",
-          "target": "~/loadbalancer"
-        },
-        {
-          "file": "expose-emojivoto.sh",
-          "target": "~",
-          "chmod": "+x"
-        },
-        {
-          "file": "expose-dashboard.sh",
-          "target": "~",
-          "chmod": "+x"
-        }
-      ]
     }
   },
   "icon": "fa-openshift",
