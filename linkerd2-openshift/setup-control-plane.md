@@ -1,6 +1,6 @@
-It’s time to install the control plane onto your OpenShift cluster. We will install the control plane in a dedicated `linkerd` project where it can easily be removed. Let's get started by logging in (needs admin to create the respective RBAC settings):
+It’s time to install the control plane onto your OpenShift cluster. We will install the control plane in a dedicated `linkerd` project where it can easily be removed. Let's get started by logging in (needs admin rights to create the respective RBAC settings):
 
-`oc login -u admin -p admin`{{execute}}
+`oc policy add-role-to-user cluster-admin developer && oc policy add-role-to-user admin developer && oc login -u developer -p developer`{{execute}}
 
 OK, ready to install Linkerd's control plane? Here we go:
 
