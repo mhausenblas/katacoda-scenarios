@@ -1,8 +1,14 @@
-It’s time to install the control plane onto your Kubernetes cluster. We will install the control plan in a dedicated `linkerd` namespace where it can easily be removed. Ready? Here we go:
+It’s time to install the control plane onto your OpenShift cluster. We will install the control plane in a dedicated `linkerd` project where it can easily be removed. Let's get started by logging in:
+
+`oc login`{{execute}}
+
+When prompted, enter the ``developer`` for both the username and password and you can check if all went well with `oc whoami`.
+
+OK, ready to install Linkerd's control plane? Here we go:
 
 `oc new-project linkerd && linkerd install | sed -e '/kind: Namespace/,+3d' | oc apply -f -`{{execute}}
 
-Above generates a bunch of Kubernetes resources and pipes it to `kubectl` which then applies it to your Kubernetes cluster.
+Above generates a bunch of Kubernetes resources and pipes it to `oc` which then applies it to your OpenShift cluster.
 
 Let's wait until everything is up and running, which may take a minute or so. An easy way to do that is the following (hint: use `CTRL+C` to stop the `watch` command to updating you once you see all pods in the `Running` status):
 
