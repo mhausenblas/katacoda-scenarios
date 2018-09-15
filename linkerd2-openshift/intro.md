@@ -11,4 +11,4 @@ Linkerd2 has two basic components:
 
 Humans interact with the Linkerd2 service mesh via the `linkerd` command-line interface (CLI) or a web app that you use to control the cluster.
 
-In this guide we will walk you through how to deploy Linkerd2 on your Kubernetes cluster and how to set up a sample gRPC application.
+In this guide we will walk you through how to deploy Linkerd2 on your OpenShift cluster and how to set up a sample gRPC application.

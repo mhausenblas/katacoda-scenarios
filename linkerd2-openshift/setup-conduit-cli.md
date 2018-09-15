@@ -1,6 +1,6 @@
 As this is your first time running Linkerd2, you’ll need to download the command-line interface (CLI) onto your machine. You’ll then use this CLI to install Linkerd2 on a Kubernetes cluster.
 
-`curl -k https://run.linkerd.io/install | sh`{{execute}}
+`curl -k https://run.linkerd.io/install | sed -e 's/-sLO/-sLO -k/g' | sed -e 's/-sL \"/-sL -k \"/g' | sh`{{execute}}
 
 Next, add Linkerd2 to your path with:
 
