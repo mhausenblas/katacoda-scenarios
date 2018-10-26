@@ -1,0 +1,29 @@
+{
+  "title": "Pulumi - Getting Started",
+  "description": "Cloud native Kubernetes plumbing",
+  "difficulty": "beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Setup the CLI",
+      "text": "setup-cli.md"
+    }, {
+      "title": "Step 2 - Launch deployment",
+      "text": "launch-deploy.md"
+    }],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "icon": "fa-kubernetes",
+  "environment": {
+    "uilayout": "terminal",
+    "hidefinish": false
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
