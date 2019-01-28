@@ -6,6 +6,10 @@ To create the `app-operator`, do the following:
 
 `operator-sdk new app-operator`{{execute}}
 
+Now change to the newly created `app-operator` directory:
+
+`cd app-operator`{{execute}}
+
 To add support for the policy, that is, to add a new API for the custom resource `HealthCheckPolicy`, do:
 
 `operator-sdk add api --api-version=policy.k8s-go.openshift.org/v1beta1 --kind=HealthCheckPolicy`{{execute}}
