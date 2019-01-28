@@ -15,6 +15,10 @@ Now you're in an interactive setup; answer the following two questions with `y` 
 - `Create Resource under pkg/apis [y/n]?`
 - `Create Controller under pkg/controller [y/n]?`
 
+Before we can compile, we have to call code generation:
+
+`make generate`{{execute}}
+
 Next, install the CRDs like so:
 
 `make install`{{execute}}
